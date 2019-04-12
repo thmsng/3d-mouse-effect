@@ -1,0 +1,50 @@
+*{
+  margin:0;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.info{
+  font-size: 16px;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: silver;
+  cursor: pointer;
+}
+
+.container{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform: translate(30%);
+}
+
+img{
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 900px;
+}
+
+@keyframes changeopacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.7;
+  }
+}
+
+div {
+  animation-duration: 4s;
+  animation-name: changeopacity;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
